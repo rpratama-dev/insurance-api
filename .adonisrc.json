@@ -1,0 +1,55 @@
+{
+  "typescript": true,
+  "commands": [
+    "./src/commands",
+    "@adonisjs/core/build/commands/index.js",
+    "@adonisjs/repl/build/commands",
+    "@adonisjs/lucid/build/commands"
+  ],
+  "exceptionHandlerNamespace": "App/Exceptions/Handler",
+  "aliases": {
+    "App": "src/app",
+    "Commands": "src/commands",
+    "Config": "src/config",
+    "Contracts": "src/contracts",
+    "Database": "src/database",
+    "Function": "src/function",
+    "Helper": "src/helper",
+    "Traits": "src/traits",
+    "Providers": "src/providers",
+    "Start": "src/start",
+    "Service": "src/service",
+    "Utils": "src/utils",
+    "Tests": "tests"
+  },
+  "directories": {
+    "config": "./src/config",
+    "contracts": "./src/contracts",
+    "providers": "./src/providers",
+    "database": "./src/database",
+    "migrations": "./src/database/migrations",
+    "seeds": "./src/database/seeders",
+    "start": "./src/start",
+    "tests": "tests"
+  },
+  "preloads": [
+    "./src/start/routes",
+    "./src/start/kernel",
+    {
+      "file": "./src/start/events",
+      "environment": ["web"]
+    }
+  ],
+  "providers": ["./src/providers/AppProvider", "@adonisjs/core", "@adonisjs/lucid", "@adonisjs/auth"],
+  "aceProviders": ["@adonisjs/repl"],
+  "tests": {
+    "suites": [
+      {
+        "name": "functional",
+        "files": ["tests/functional/**/*.spec(.ts|.js)"],
+        "timeout": 60000
+      }
+    ]
+  },
+  "testProviders": ["@japa/preset-adonis/TestsProvider"]
+}

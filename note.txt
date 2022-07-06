@@ -1,0 +1,29 @@
+Relasi One to One
+  Relasi One to One adalah relasi yang mana 
+  setiap satu baris data pada tabel pertama 
+  hanya berhubungan dengan satu baris pada tabel kedua. 
+  Agar tidak bingung, 
+  lihat visualisasi garis relasi One to One di bawah ini:
+
+  contoh:
+    satu user memiliki satu profile
+
+Relasi One to Many
+  Relasi One to Many adalah relasi yang mana 
+  setiap satu baris data pada tabel pertama 
+  berhubungan dengan lebih dari satu baris pada tabel kedua. 
+  Agar tidak bingung, lihat visualisasi garis relasi One to Many di bawah ini:
+
+  contoh:
+    satu user memiliki banyak post
+
+Relasi Many to Many
+  Relasi Many to Many adalah relasi yang mana 
+  setiap lebih dari satu baris data dari tabel pertama 
+  berhubungan dengan lebih dari satu baris data pada tabel kedua. 
+  Artinya, kedua tabel masing-masing dapat mengakses banyak data 
+  dari tabel yang direlasikan
+  
+  Contoh:
+    setiap mahasiswa dapat mengambil banyak mata kuliah 
+    dan setiap mata kuliah dapat diambil banyak mahasiswa.
